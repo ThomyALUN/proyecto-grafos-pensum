@@ -96,8 +96,6 @@ if opcion and asignGrafo[opcion]:
             st.write(nodo)
     grafo=nuevoGrafo
     grafo.save()
-    grafo.format="png"
-    grafo.render()
 st.header("Esquema:")
 with open("Digraph.gv") as archivo:
     imagen=archivo.read()
